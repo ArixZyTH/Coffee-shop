@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ฟอนต์ Prompt -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Prompt', sans-serif;
+    }
+
+    /* ฟอนต์ Playwrite NO */
+    .font-playwrite {
+        font-family: 'Playwrite NO', sans-serif;
+    }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffeeDark: "#4b2e19",
+                        coffeeLight: "#cfa575",
+                        coffeeCream: "#fff8e6",
+                        duckYellow: "#f1c40f"
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-coffeeCream">
+
+    <!-- ========= NAVBAR ========= -->
+    <nav class="bg-coffeeDark text-white shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold font-playwrite">Duck Coffee</h1>
+            <div class="space-x-6 text-coffeeLight font-medium font-PlaywriteNO">
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========= PROFILE ร้าน ========= -->
+    <section class="container mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg">
+        <div class="flex flex-col md:flex-row items-center gap-6">
+            <img src="images/Duck coffee.png"
+                class="w-32 h-32 rounded-full shadow-lg border-4 border-coffeeLight" />
+
+            <div>
+                <h2 class="text-3xl font-bold text-coffeeDark">Duck Coffee</h2>
+                <p class="mt-2">📍 ที่อยู่ : 123/456 ถนนสายกาแฟ บางกาแฟอร่อย</p>
+                <p>📞 เบอร์โทร : 099-999-9999</p>
+                <p>LINE : @duckcoffee</p>
+                <p>Facebook : Duck Coffee Official</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= BANNER โปรโมชั่น ========= -->
+    <section class="container mx-auto mt-8 font-kanit">
+        <h2 class="text-2xl font-bold mb-4 text-coffeeDark ">โปรโมชั่น</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <img src="images/unnamed.jpg" class="rounded-lg shadow-lg">
+            <img src="images/unnamed 2.jpg" class="rounded-lg shadow-lg">
+            <img src="images/unnamed 3.jpg" class="rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <!-- ========= เมนูแบบ Card ========= -->
+    <section class="container mx-auto mt-10">
+        <h2 class="text-2xl font-bold mb-4 text-coffeeDark">เมนูยอดนิยม</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+            <!-- CARD COMPONENT -->
+            <!-- CARD 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/latte.jpg" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-coffeeDark font-playwrite">ลาเต้ ก้าบๆ</h3>
+                    <p class="text-gray-600 font-playwrite">ราคา 45 บาท</p>
+
+                    <button class="mt-4 bg-duckYellow text-coffeeDark font-bold py-2 px-4 rounded w-full hover:bg-yellow-400">
+                        สั่งซื้อทันที
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/cappuccino.jpg" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-coffeeDark font-playwrite">คาปูชิโน่ ก้าบๆ</h3>
+                    <p class="text-gray-600 font-playwrite">ราคา 55 บาท</p>
+
+                    <button class="mt-4 bg-duckYellow text-coffeeDark font-bold py-2 px-4 rounded w-full hover:bg-yellow-400">
+                        สั่งซื้อทันที
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/matcha.jpg" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-coffeeDark font-playwrite">ชาเขียว มัจฉะ ก้าบๆ</h3>
+                    <p class="text-gray-600 font-playwrite">ราคา 60 บาท</p>
+
+                    <button class="mt-4 bg-duckYellow text-coffeeDark font-bold py-2 px-4 rounded w-full hover:bg-yellow-400">
+                        สั่งซื้อทันที
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/chathai.jpg" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-coffeeDark font-playwrite">ชาไทย ก้าบๆ</h3>
+                    <p class="text-gray-600 font-playwrite">ราคา 40 บาท</p>
+
+                    <button class="mt-4 bg-duckYellow text-coffeeDark font-bold py-2 px-4 rounded w-full hover:bg-yellow-400">
+                        สั่งซื้อทันที
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/cocoa.jpg" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-semibold text-coffeeDark font-playwrite">โกโก้ สุดโก้ ก้าบๆ</h3>
+                    <p class="text-gray-600 font-playwrite">ราคา 55 บาท</p>
+                    <button class="mt-4 bg-duckYellow text-coffeeDark font-bold py-2 px-4 rounded w-full hover:bg-yellow-400">
+                        สั่งซื้อทันที
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========= FOOTER ========= -->
+    <footer class="mt-10 bg-coffeeDark text-white py-6 font-playwrite">
+        <div class="container mx-auto text-center">
+            Duck Coffee © 2025 • Every cup made with love.
+        </div>
+    </footer>
+
+</body>
+
+</html>
